@@ -8,12 +8,19 @@
 .container {
   width: max(calc(100% - 2rem), 25rem, 21.88rem);
   margin-inline: auto;
+  padding: 2rem;
+}
+
+.wrapper {
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 0px 0px 10px 10px;
 }
 
 /*------FLEXBOX LAYOUT STYLES-----------*/
 
 .flex__container {
-  @include flex_me($dir: column, $wrap: wrap);
+  @include flex_me();
 }
 
 /*------GRID LAYOUT STYLES-----------*/

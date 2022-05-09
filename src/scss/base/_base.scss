@@ -22,27 +22,10 @@ body {
   background-color: var(--clr-bg-color-main);
 }
 
-article {
-  background-color: #fff;
-}
-
 p {
   @extend %text-modules;
 }
 
 a {
   @extend %link-properties;
-}
-
-/*Hide h1 but make it accessible for screen readers*/
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
 }
