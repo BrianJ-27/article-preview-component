@@ -17,23 +17,31 @@ p {
   padding-bottom: 1rem;
 }
 
+.wrapper > p.content {
+  padding-bottom: 2rem;
+}
+
 //h2 styles
 .title__secondary {
   @include text-prop(
-    $size: clamp(1.1rem, 4vw, 1.8rem),
+    $size: clamp(1.2rem, 2.7vw, 1.5rem),
     $f-weight: var(--fp-f-weight-bold),
     $color: var(--clr-primary-text)
   );
   @extend %text-modules;
+  &--avatar {
+    font-weight: var(--fp-f-weight-bold);
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+    color: var(--clr-primary-text);
+  }
 }
 
 /*----CONTENT STYLES----*/
 
 .content {
   @include text-prop(
-    $size: clamp(0.9rem, 3vw, 1.5rem),
+    $size: clamp(0.9rem, 3vw, 1rem),
     $f-weight: var(--fp-f-weight-normal),
     $color: var(--clr-secondary-text)
   );
-  padding-bottom: 1rem;
 }

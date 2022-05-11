@@ -20,6 +20,8 @@ body {
 
 body {
   background-color: var(--clr-bg-color-main);
+  width: calc(100% - 1.5rem);
+  margin-inline: auto;
 }
 
 p {

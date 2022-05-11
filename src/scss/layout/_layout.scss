@@ -5,22 +5,19 @@
 
 /*------BASE LAYOUT STYLES-----------*/
 
-.container {
-  width: max(calc(100% - 2rem), 25rem, 21.88rem);
-  margin-inline: auto;
-  padding: 2rem;
-}
-
 .wrapper {
-  padding: 1.5rem;
+  padding: 2.5rem;
   background-color: #fff;
   border-radius: 0px 0px 10px 10px;
+  @include mq("md") {
+    border-radius: 0px 10px 10px 0px;
+  }
 }
 
 /*------FLEXBOX LAYOUT STYLES-----------*/
 
 .flex__container {
-  @include flex_me();
+  @include flex_me($just: space-between, $vertAlign: center);
 }
 
 /*------GRID LAYOUT STYLES-----------*/
@@ -28,4 +25,27 @@
 .grid__container {
   @extend %ctr-grid-content;
   min-height: 100vh;
+}
+
+.main__grid--container {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(300px, 350px);
+  grid-template-areas:
+    "card_image"
+    "card_content";
+  @include mq("md") {
+    max-width: 800px;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "card_image card_content";
+  }
+}
+
+.card_image {
+  grid-area: card_image;
+}
+
+.card_content {
+  grid-area: card_content;
 }

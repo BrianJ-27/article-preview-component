@@ -1,22 +1,33 @@
+import React, { useState } from "react";
 import drawersPic from "./images/drawers.jpg";
 import CardImage from "./components/card-image/card-imgae";
 import CardContents from "./components/card-content/card-content";
 import Footer from "./components/footer/footer";
-import HideHeading from "./components/sr-only/sr-only";
+import SrOnlyHeading from "./components/sr-only/sr-only";
+import ShowModal from "./components/modal/modal";
+const App = () => {
+  
+  const [isHidden, setIsHidden] = useState(true);
 
-function App() {
+  const handleModalState = (isHidden) => {
+    setIsHidden(isHidden);
+  };
+
   return (
-    <div className="grid__container">
-      <main className="container">
-        <HideHeading />
-        <div>
+    <React.Fragment>
+      <SrOnlyHeading />
+      <div className="grid__container">
+        <main className="main__grid--container">
           <CardImage card_image={drawersPic} />
-          <CardContents />
-        </div>
-        <Footer />
-      </main>
-    </div>
+          <CardContents handleModal={handleModalState} isHidden={isHidden} />
+          {!isHidden && (
+            <ShowModal handleModal={handleModalState} isHidden={isHidden} />
+          )}
+        </main>
+      </div>
+      <Footer />
+    </React.Fragment>
   );
-}
+};
 
 export default App;

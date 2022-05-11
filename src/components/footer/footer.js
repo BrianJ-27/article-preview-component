@@ -4,6 +4,7 @@ import styled from "styled-components";
 const CardFooter = styled.footer`
   color: darkgreen;
   font-size: 12px;
+  text-align: center;
 `;
 
 const footer = () => {
@@ -15,7 +16,7 @@ const footer = () => {
         target="_blank"
         rel="noreferrer"
       >
-        Frontend Mentor
+        &nbsp; Frontend Mentor
       </a>
       . Coded by <a href="#myid">Brian Johnson</a>.
     </CardFooter>
