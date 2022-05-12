@@ -24,14 +24,14 @@ p {
 //h2 styles
 .title__secondary {
   @include text-prop(
-    $size: clamp(1.2rem, 2.7vw, 1.5rem),
+    $size: clamp(1.07rem, 2.7vw, 1.6rem),
     $f-weight: var(--fp-f-weight-bold),
     $color: var(--clr-primary-text)
   );
   @extend %text-modules;
   &--avatar {
     font-weight: var(--fp-f-weight-bold);
-    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+    font-size: clamp(0.9rem, 1.5vw, 1.05rem);
     color: var(--clr-primary-text);
   }
 }
@@ -40,8 +40,12 @@ p {
 
 .content {
   @include text-prop(
-    $size: clamp(0.9rem, 3vw, 1rem),
-    $f-weight: var(--fp-f-weight-normal),
+    $size: clamp(0.8rem, 2.7vw, 1rem),
+    $f-weight: var(--fp-f-weight-bold),
     $color: var(--clr-secondary-text)
   );
+  &__date {
+    @extend .content;
+    font-weight: var(--fp-f-weight-normal);
+  }
 }

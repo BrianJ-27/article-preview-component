@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   border-radius: 0px 0px 10px 10px;
   @media screen and (min-width: 768px) {
     border-radius: 0px 10px 10px 0px;
+    padding: 3.5rem;
   }
 `;
 
@@ -17,8 +18,10 @@ const CardContent = ({ handleModal, isHidden }) => {
   return (
     <Wrapper className="wrapper card_content">
       <h2 className="title__secondary">
-        Shift the overall look and feel by adding these wonderful touches to
-        furniture in your home
+        <strong>
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </strong>
       </h2>
       <p className="content">
         Ever been in a room and felt like something was missing? Perhaps it felt
@@ -30,7 +33,7 @@ const CardContent = ({ handleModal, isHidden }) => {
           <AvatarImage card_avatar={avatarMichelle} />
           <div style={{ paddingLeft: "1rem" }}>
             <h2 className="title__secondary--avatar">Michelle Appleton</h2>
-            <p className="content">28 Jun 2020</p>
+            <p className="content__date">28 Jun 2020</p>
           </div>
         </div>
         <ArrowContainer handleModal={handleModal} isHidden={isHidden} />

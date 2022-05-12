@@ -3,17 +3,6 @@
 // **************************************
 @use "../utilities" as *;
 
-/*------BASE LAYOUT STYLES-----------*/
-
-.wrapper {
-  padding: 2.5rem;
-  background-color: #fff;
-  border-radius: 0px 0px 10px 10px;
-  @include mq("md") {
-    border-radius: 0px 10px 10px 0px;
-  }
-}
-
 /*------FLEXBOX LAYOUT STYLES-----------*/
 
 .flex__container {
@@ -35,7 +24,7 @@
     "card_image"
     "card_content";
   @include mq("md") {
-    max-width: 800px;
+    max-width: 750px;
     grid-template-columns: 35% 65%;
     grid-template-rows: 1fr;
     grid-template-areas: "card_image card_content";

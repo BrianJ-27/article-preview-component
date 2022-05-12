@@ -15,6 +15,26 @@ const Modal = styled.div`
   border-radius: 0px 0px 10px 10px;
   display: flex;
   justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    left: 76%;
+    right: -8%;
+    bottom: 120px;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 40px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 0;
+      height: 0;
+      border-top: 25px solid var(--clr-primary-text);
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+    }
+  }
 `;
 
 const IconContainer = styled.div`
@@ -25,6 +45,7 @@ const ArrowContainer = styled.div`
   padding: 7px;
   border-radius: 50%;
   background-color: var(--clr-secondary-text);
+  cursor: pointer;
 `;
 
 const SocialIcons = styled.img`
@@ -33,7 +54,7 @@ const SocialIcons = styled.img`
 `;
 
 const ModalText = styled.span`
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: var(--fp-f-weight-normal);
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -51,7 +72,10 @@ const socialModal = ({ handleModal, isHidden }) => {
         <SocialIcons src={TwitterSVG} alt="Twitter Icon" />
         <SocialIcons src={PinterestSVG} alt="Facebook Icon" />
       </IconContainer>
-      <ArrowContainer onClick={() => handleModal(!isHidden)}>
+      <ArrowContainer
+        onClick={() => handleModal(!isHidden)}
+        className={isHidden ? "show__back-arrow" : "hide__back-arrow"}
+      >
         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
           <path
             fill="#fff"
