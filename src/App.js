@@ -4,13 +4,13 @@ import CardImage from "./components/card-image/card-imgae";
 import CardContents from "./components/card-content/card-content";
 import Footer from "./components/footer/footer";
 import SrOnlyHeading from "./components/sr-only/sr-only";
-import ShowModal from "./components/modal/modal";
 const App = () => {
-  
   const [isHidden, setIsHidden] = useState(true);
+  const [isAriaExpanded, setIsAriaExpanded] = useState(false);
 
-  const handleModalState = (isHidden) => {
+  const handleModalState = (isHidden, isAriaExpanded) => {
     setIsHidden(isHidden);
+    setIsAriaExpanded(true);
   };
 
   return (
@@ -19,10 +19,11 @@ const App = () => {
       <div className="grid__container">
         <main className="main__grid--container">
           <CardImage card_image={drawersPic} />
-          <CardContents handleModal={handleModalState} isHidden={isHidden} />
-          {!isHidden && (
-            <ShowModal handleModal={handleModalState} isHidden={isHidden} />
-          )}
+          <CardContents
+            handleModal={handleModalState}
+            isHidden={isHidden}
+            ariaExpanded={isAriaExpanded}
+          />
         </main>
       </div>
       <Footer />

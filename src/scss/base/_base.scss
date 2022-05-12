@@ -42,6 +42,7 @@ a {
 .arrow__base-color {
   background-color: var(--clr-bg-color-main);
   fill: var(--clr-secondary-text);
+  aspect-ratio: 1 / 1;
 }
 
 .show__back-arrow {

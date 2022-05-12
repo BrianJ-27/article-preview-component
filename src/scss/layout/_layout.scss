@@ -24,8 +24,8 @@
     "card_image"
     "card_content";
   @include mq("md") {
-    max-width: 750px;
-    grid-template-columns: 35% 65%;
+    max-width: 62rem;
+    grid-template-columns: 2fr 3fr;
     grid-template-rows: 1fr;
     grid-template-areas: "card_image card_content";
   }
