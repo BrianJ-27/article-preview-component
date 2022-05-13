@@ -16,7 +16,10 @@ const App = () => {
 
   return (
     <React.Fragment>
-      <SrOnlyHeading />
+      <header>
+        <SrOnlyHeading />
+      </header>
+
       <div className="grid__container">
         <main className="main__grid--container">
           <CardImage card_image={drawersPic} />
