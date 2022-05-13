@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FEM Solution Link](https://your-solution-url.com)
+- Solution URL: [FEM Solution Link](https://www.frontendmentor.io/solutions/article-preview-component-react-based-BJocjy2U5)
 - Live Site URL: [Live Deployed Site](https://article-preview-component-bj.netlify.app/)
 
 ## My process
