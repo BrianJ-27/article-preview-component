@@ -8,9 +8,10 @@ const App = () => {
   const [isHidden, setIsHidden] = useState(true);
   const [isAriaExpanded, setIsAriaExpanded] = useState(false);
 
-  const handleModalState = (isHidden, isAriaExpanded) => {
+  const handleModalState = (isHidden) => {
     setIsHidden(isHidden);
-    setIsAriaExpanded(true);
+    // Toggle the aria-expanded attribute on click
+    setIsAriaExpanded((isAriaExpanded) => !isAriaExpanded);
   };
 
   return (

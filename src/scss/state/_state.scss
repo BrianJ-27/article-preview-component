@@ -1,0 +1,34 @@
+// **************************************
+// COMPONENT STATE STYLES
+// **************************************
+
+@use "../utilities" as *;
+
+// Initial state styles of the card arrow SVG
+.arrow__base-color {
+  background-color: var(--clr-bg-color-main);
+  fill: var(--clr-secondary-text);
+  aspect-ratio: 1 / 1;
+}
+
+// Clicked State styles of the card arrow SVG
+.arrow__change-color {
+  @include mq("md") {
+    background-color: var(--clr-secondary-text);
+    fill: #ffffff;
+  }
+}
+
+// Display no back arrow on modal when breakpoint is 768px or greater
+.hide__back-arrow {
+  @include mq("md") {
+    display: none;
+  }
+}
+
+// Displays back arrow on modal when breakpoint is 768px or greater
+.show__back-arrow {
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+}

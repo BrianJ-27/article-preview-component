@@ -75,7 +75,7 @@ const SrOnlyText = styled.span`
   width: 1px;
 `;
 
-const socialModal = ({ handleModal, isHidden, isAriaExpanded }) => {
+const socialModal = ({ handleModal, isHidden, ariaExpanded }) => {
   return (
     <Modal className="flex__container">
       <div>
@@ -91,7 +91,7 @@ const socialModal = ({ handleModal, isHidden, isAriaExpanded }) => {
       <ArrowContainer
         onClick={() => handleModal(!isHidden)}
         className={isHidden ? "show__back-arrow" : "hide__back-arrow"}
-        aria-expanded={isAriaExpanded}
+        aria-expanded={ariaExpanded ? true : false}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

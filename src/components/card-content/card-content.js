@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const CardContent = ({ handleModal, isHidden, isAriaExpanded }) => {
+const CardContent = ({ handleModal, isHidden, ariaExpanded }) => {
   return (
     <Wrapper className="wrapper card_content">
       <h2 className="title__secondary">
@@ -34,7 +34,7 @@ const CardContent = ({ handleModal, isHidden, isAriaExpanded }) => {
           <ShowModal
             handleModal={handleModal}
             isHidden={isHidden}
-            ariaExpanded={isAriaExpanded}
+            ariaExpanded={ariaExpanded}
           />
         )}
         <div className="avatar__container flex__container">
@@ -47,7 +47,7 @@ const CardContent = ({ handleModal, isHidden, isAriaExpanded }) => {
         <ArrowContainer
           handleModal={handleModal}
           isHidden={isHidden}
-          isAriaExpanded={isAriaExpanded}
+          ariaExpanded={ariaExpanded}
         />
       </div>
     </Wrapper>

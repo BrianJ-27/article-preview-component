@@ -16,12 +16,12 @@ const SrOnlyText = styled.span`
   width: 1px;
 `;
 
-const ArrowContainer = ({ handleModal, isHidden, isAriaExpanded }) => {
+const ArrowContainer = ({ handleModal, isHidden, ariaExpanded }) => {
   return (
     <ArrowWrapper
       className={isHidden ? "arrow__base-color" : "arrow__change-color"}
-      onClick={() => handleModal(!isHidden)}
-      aria-expanded={isAriaExpanded}
+      onClick={() => handleModal(!isHidden, ariaExpanded)}
+      aria-expanded={ariaExpanded}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

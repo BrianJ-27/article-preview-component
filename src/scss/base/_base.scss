@@ -31,28 +31,3 @@ p {
 a {
   @extend %link-properties;
 }
-
-.arrow__change-color {
-  @include mq("md") {
-    background-color: var(--clr-secondary-text);
-    fill: #ffffff;
-  }
-}
-
-.arrow__base-color {
-  background-color: var(--clr-bg-color-main);
-  fill: var(--clr-secondary-text);
-  aspect-ratio: 1 / 1;
-}
-
-.show__back-arrow {
-  @include mq("md") {
-    display: block;
-  }
-}
-
-.hide__back-arrow {
-  @include mq("md") {
-    display: none;
-  }
-}
