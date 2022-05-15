@@ -10,6 +10,9 @@ const CardImage = styled.img`
   @media screen and (min-width: 768px) {
     border-radius: 10px 0px 0px 10px;
   }
+  &:focus {
+    outline: 1px dotted darkgreen;
+  }
 `;
 
 const cardImage = ({ card_image }) => (

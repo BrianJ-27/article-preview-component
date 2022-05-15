@@ -53,6 +53,10 @@ const ArrowContainer = styled.button`
   border-radius: 50%;
   background-color: var(--clr-secondary-text);
   cursor: pointer;
+  &:focus,
+  &:focus-visible {
+    outline: 2px dotted darkgreen;
+  }
 `;
 
 const SocialIcons = styled.img`

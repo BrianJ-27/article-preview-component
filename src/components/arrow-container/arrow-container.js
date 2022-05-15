@@ -7,6 +7,11 @@ const ArrowWrapper = styled.button`
   padding: 7px;
   border-radius: 50%;
   cursor: pointer;
+
+  &:focus,
+  &:focus-visible {
+    outline: 2px dotted darkgreen;
+  }
 `;
 
 const SrOnlyText = styled.span`

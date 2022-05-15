@@ -13,6 +13,9 @@ const Wrapper = styled.div`
     border-radius: 0px 10px 10px 0px;
     padding: 2rem 3rem;
   }
+  &:focus {
+    outline: 1px dotted darkgreen;
+  }
 `;
 
 const CardContent = ({ handleModal, isHidden, ariaExpanded }) => {

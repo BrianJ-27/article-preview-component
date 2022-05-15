@@ -7,9 +7,6 @@
 /*-----BASE GLOBAL STYLES------*/
 * {
   box-sizing: border-box;
-  &:focus {
-    outline: 3px dashed;
-  }
 }
 
 html {
