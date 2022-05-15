@@ -110,8 +110,6 @@ const ArrowContainer = ({ handleModal, isHidden, ariaExpanded }) => {
 
 I want to continue developing a fluid workflow that easily integrates Sass and Styled components better than I did on this project. I say this because I noticed that keeping the styled-components in the same file as my JSX was becoming a long file to maintain. Also I want to continue building out more reusable react components so i can build out projects faster. I want to continue developing my accessibility knowledge on knowing when to appropriately used aria attributes with user interaction.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
 ### Useful resources
 
 - [How to Toggle Boolean Value in the state of React Component](http://www.js-craft.io/blog/toggling-a-value-in-the-state-of-a-react-component-the-right-way/) - This article helped me to visually see and then understand how to properly toggle a boolean value for my aria-expanded value on my button on click. I really liked this article and will be referring back to it in future projects.
