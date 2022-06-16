@@ -5,7 +5,7 @@ import styled from "styled-components";
 import ArrowContainer from "../arrow-container/arrow-container";
 import ShowModal from "../modal/modal";
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
   padding: 2.5rem;
   background-color: #ffffff;
   border-radius: 0px 0px 10px 10px;
@@ -20,7 +20,7 @@ const Wrapper = styled.div`
 
 const CardContent = ({ handleModal, isHidden, ariaExpanded }) => {
   return (
-    <Wrapper className="wrapper card_content">
+    <Wrapper aria-label="furniture-tips" className="wrapper card_content">
       <h2 className="title__secondary">
         <strong>
           Shift the overall look and feel by adding these wonderful touches to
