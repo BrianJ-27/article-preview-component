@@ -42,7 +42,7 @@ p {
   @include text-prop(
     $size: clamp(0.8rem, 2.7vw, 1rem),
     $f-weight: var(--fp-f-weight-bold),
-    $color: var(--clr-secondary-text)
+    $color: var(--clr-accent-color)
   );
   &__date {
     @extend .content;

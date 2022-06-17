@@ -21,12 +21,12 @@ const Wrapper = styled.section`
 const CardContent = ({ handleModal, isHidden, ariaExpanded }) => {
   return (
     <Wrapper aria-label="furniture-tips" className="wrapper card_content">
-      <h2 className="title__secondary">
+      <h1 className="title__secondary">
         <strong>
           Shift the overall look and feel by adding these wonderful touches to
           furniture in your home
         </strong>
-      </h2>
+      </h1>
       <p className="content">
         Ever been in a room and felt like something was missing? Perhaps it felt
         slightly bare and uninviting. I’ve got some simple tips to help you make
